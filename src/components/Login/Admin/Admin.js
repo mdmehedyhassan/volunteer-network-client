@@ -115,7 +115,7 @@ const Admin = () => {
                                     <div>
                                         <label htmlFor="name">Name:</label>
                                         <input className="form-control" {...register("name", { required: true, minLength: 6 })} placeholder="Name" />
-                                        {errors.password && <span className="text-danger">Name is required minimum 6 Characters</span>}
+                                        {errors.name && <span className="text-danger">Name is required minimum 6 Characters</span>}
                                         <br />
                                     </div>
                                 }
