@@ -8,7 +8,7 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setEvents(data))
     }, [])
-    console.log(events);
+    // console.log(events);
     return (
         <div>
             <div className="row">

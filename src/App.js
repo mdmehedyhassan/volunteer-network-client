@@ -21,14 +21,20 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/" element={<PrivetRoute />} >
-            {/* <Route path="/register/:id" element={<Register />} />
-            <Route path="/donation/*" element={<Donation />} /> */}
+            <Route path="/register/:id" element={<Register />} />
+            <Route path="/donation/*" element={<Donation />} />
           </Route>
-          <Route path="/register/:id" element={<Register />} />
-          <Route path="/donation/*" element={<Donation />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/admin" element={<Admin />} />
         </Routes>
+        <div className="mt-5">
+          <a className="m-3" href="https://github.com/mdmehedyhassan/volunteer-network-server" target="blank" >
+            <button className="btn btn-outline-light">Server site link</button>
+          </a>
+          <a className="m-3" href="https://github.com/mdmehedyhassan/volunteer-network-client" target="blank" >
+            <button className="btn btn-outline-light">clients site link</button>
+          </a>
+        </div>
       </div>
     </UserContext.Provider>
   );
