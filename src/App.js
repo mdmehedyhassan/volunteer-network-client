@@ -5,8 +5,8 @@ import Header from './components/Header/Header';
 import Admin from './components/Login/Admin/Admin';
 import PrivetRoute from './components/Login/PrivetRoute/PrivetRoute';
 import Register from './components/Login/Register/Register';
+import Blog from './components/Main/Blog/Blog';
 import Donation from './components/Main/Donation/Donation';
-import Events from './components/Main/Events/Events';
 import Home from './components/Main/Home/Home';
 
 export const UserContext = createContext()
@@ -21,13 +21,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/" element={<PrivetRoute />} >
-            {/* <Route path="/register" element={<Register />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/donation" element={<Donation />} /> */}
+            {/* <Route path="/register/:id" element={<Register />} />
+            <Route path="/donation/*" element={<Donation />} /> */}
           </Route>
-          <Route path="/register" element={<Register />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/donation" element={<Donation />} />
+          <Route path="/register/:id" element={<Register />} />
+          <Route path="/donation/*" element={<Donation />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/admin" element={<Admin />} />
         </Routes>
       </div>

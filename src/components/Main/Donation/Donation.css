@@ -1,21 +1,15 @@
-table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th {
-    text-align: center;
-    padding: 8px;
-    border: 2px dotted gray;
-    color: black;
-    background-color: white;
-  }
-  
-  td {
-    text-align: left;
-    padding: 12px 2px ;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #53caca;
-  }
+ul{list-style-type: none;}
+ul li{
+  margin: 10px 0;
+}
+
+.activeLink {
+  padding: 10px 3px;
+  color: rgb(255, 0, 0);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgb(0, 255, 0), -3px -3px 5px rgb(0, 255, 0);
+}
+.deactivateLink{
+  padding: 10px 2px;
+  color: gold;
+}

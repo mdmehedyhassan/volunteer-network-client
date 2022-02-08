@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    text-align: center;
+    padding: 12px 2px;
+    color: rgb(255, 6, 6);
+    background-color: rgb(255, 238, 0);
+  }
+  
+  td {
+    text-align: center;
+    padding: 12px 2px ;
+}
+tr:nth-child(even) {
+  background-color: #00590f;
+}

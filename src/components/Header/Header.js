@@ -24,10 +24,10 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto d-flex align-items-lg-center align-items-end">
                         <Link style={linkStyles} to="/home">Home</Link>
-                        <Link style={linkStyles} to="/donation">Donation</Link>
-                        <Link style={linkStyles} to="/events">Events</Link>
+                        <Link style={linkStyles} to="/donation/volunteer">Donation</Link>
+                        <Link style={linkStyles} to="/donation/events">Events</Link>
                         <Link style={linkStyles} to="/blog">Blog</Link>
-                        <Link style={linkStyles} to="/register"><button className="btn btn-primary">Register</button></Link>
+                        <Link style={linkStyles} to=""><button className="btn btn-primary">Register</button></Link>
                         <Link style={linkStyles} to="/admin"><button className="btn btn-light">{loginUser.email? loginUser.name : `Admin`}</button></Link>
                     </Nav>
                     
