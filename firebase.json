@@ -1,7 +1,12 @@
 {
   "hosting": {
-    "site": "biscayne",
     "public": "build",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",
